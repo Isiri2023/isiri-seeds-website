@@ -66,6 +66,7 @@ section {
 .hero-left {
     flex: 0 0 33%;
     background: #0e6b23 url("4d8d7eba-c59c-48bb-869a-b4f621e22f22.png") center center / cover no-repeat;
+    height: 100%;          /* <-- REQUIRED */
     display: flex;
     justify-content: center;
     align-items: center;
