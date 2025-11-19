@@ -52,7 +52,8 @@ section {
 }
 .hero-left {
     /* Give the left panel a bit more width so the green color feels dominant. */
-    flex: 0 0 40%;
+    /* Make the green panel fill half of the hero section so the color covers the entire left side */
+    flex: 0 0 50%;
     background-color: #0e6b23;
     display: flex;
     justify-content: center;
