@@ -60,6 +60,7 @@ section {
     height: calc(100vh - 60px);
     margin-top: 0;
     align-items: stretch;
+    padding: 0;
 }
 
 /* LEFT SIDE — 33% WIDTH + FULL BACKGROUND IMAGE */
