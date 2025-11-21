@@ -127,5 +127,24 @@
             </p>
         </section>
     </main>
-</body>
+</    <script>
+        const slideImages = [
+            'slide1.jpg',
+            'slide2.jpg',
+            'slide3.jpg',
+            'slide4.jpg',
+            'slide5.jpg'
+        ];
+        let slideIndex = 0;
+        const heroRight = document.querySelector('.hero-right');
+        function setSlide() {
+            heroRight.style.backgroundImage = `url('${slideImages[slideIndex]}')`;
+            heroRight.style.backgroundSize = 'cover';
+            heroRight.style.backgroundPosition = 'center';
+            slideIndex = (slideIndex + 1) % slideImages.length;
+        }
+        setSlide();
+        setInterval(setSlide, 5000);
+    </script>
+body>
 </html>
