@@ -140,6 +140,8 @@
         function setSlide() {
             heroRight.style.backgroundImage = `url('${slideImages[slideIndex]}')`;
             heroRight.style.backgroundSize = 'cover';
+                heroRight.style.backgroundRepeat = 'no-repeat';
+            
             heroRight.style.backgroundPosition = 'center';
             slideIndex = (slideIndex + 1) % slideImages.length;
         }
