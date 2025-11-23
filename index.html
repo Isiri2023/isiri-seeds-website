@@ -1,49 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | ISIRI Seeds Production</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISIRI Seeds Production</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 </head>
 <body>
-    <!-- Shared navigation -->
+    <!-- Fixed navigation bar --
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-inner" style="width:100%;max-width:1200px;display:flex;align-items:center;justify-content:space-between;">
+    <a href="/" class="logo">Isiri Seeds Production</a>
+
+    <!-- Desktop nav (unchanged) -->
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hamburger - visible on mobile only -->
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </div
     </header>
-    <!-- About section -->
-    <section class="about-section" id="about">
-        <img src="about.jpg" alt="Seedlings">
-        <div class="about-text">
-            <h1 class="section-title">About Us</h1>
-            <h2>Rooted in Indian Agricultural Excellence</h2>
-            <p>ISIRI is dedicated to advancing Indian agriculture by producing and supplying superior quality seeds. Founded with a passion for farming, we have become a trusted partner for farmers seeking to boost their productivity and ensure sustainable growth. Our commitment to research and innovation drives us to provide seeds that thrive and prosper.</p>
-        </div>
-    </section>
-    <!-- Founder section -->
-    <section class="founder-section">
-        <h2 class="section-title">Our Team</h2>
-        <div class="founder-cards">
-            <div class="founder-card">
-                <img src="founder.jpg" alt="Our Founder">
-                <h3>Our Founder</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="menu-overlay" id="menuOverlay" hidden></div>
+    <aside class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile menu">
+        <button id="menuClose" class="menu-close" aria-label="Close menu">&times;</button>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
+
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="hero-left">
+                <!-- Background handled in CSS -->
             </div>
-            <div class="founder-card">
-                <img src="director.jpg" alt="Our Director">
-                <h3>Our Director</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="hero-right">
+                <a href="contact.html" class="btn">Get in Touch</a>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Why Choose ISIRI section -->
+        <section class="features" id="features">
+            <h2>Why Choose ISIRI?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Superior Quality</h3>
+                    <p>
+                        Our seeds are rigorously selected and tested to ensure they meet the
+                        highest standards.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Wide Variety</h3>
+                    <p>
+                        We offer a diverse range of seeds to suit different climates, soils, and
+                        agricultural needs.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-map"></i>
+                    <h3>Indian Expertise</h3>
+                    <p>
+                        With deep roots in Indian agriculture, we bring generations of knowledge and
+                        experience to our products.
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Farmer Partnership</h3>
+                    <p>
+                        We work closely with farmers, providing support and expertise to help them
+                        achieve successful harvests.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="about-text">
+                <h2>About us</h2>
+                <p>Isiri Seeds, founded in 2020 by an industry expert with 25+ years of experience in export-oriented seed production, specializes i
+                    n high-quality F1 hybrid vegetable seeds for global markets. We offer reliable contract seed multiplication in cost-efficient, 
+                    climate-suitable regions, using precise hand-pollination and modern production technology. With skilled growers, trained pollination 
+                    teams, and experienced QA and processing staff, we ensure superior quality, consistent quantities, and timely delivery. Guided by our 
+                    “Quality First” vision, Isiri Seeds blends India’s agricultural strengths with global standards, providing sustainable, dependable,
+                    long-term seed production partnerships worldwide.
+                </p>
+            </div>
+        </section>
+
+        <!-- Founder section -->
+        <section class="founder-section" id="founder">
+            <h2>Our Leadership</h2>
+            <div class="founder-cards">
+                <div class="founder-card">
+                    <img src="founder.jpg" alt="Founder of ISIRI Seeds" />
+                    <h3>Our Founder</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <div class="founder-card">
+                    <img src="director.jpg" alt="Director of ISIRI Seeds" />
+                    <h3>Our Director</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple call-to-action linking to contact page -->
+        <section class="features" id="contact-cta">
+            <h2>Contact Us</h2>
+            <p>
+                We would love to hear from you. Please visit our
+                <a href="contact.html">contact page</a> to send us a message or inquiry.
+            </p>
+        </section>
+    </main>
+
+    <!-- Slideshow script -->
+    <script>
+        const slideImages = [
+            'slide2.jpg',
+            'slide3.jpg',
+            'slide4.jpg',
+            'slide5.jpg'
+        ];
+        let slideIndex = 0;
+        const heroRight = document.querySelector('.hero-right');
+        function setSlide() {
+            heroRight.style.backgroundImage = `url('${slideImages[slideIndex]}')`;
+            heroRight.style.backgroundSize = 'cover';
+            heroRight.style.backgroundRepeat = 'no-repeat';
+            heroRight.style.backgroundPosition = 'center';
+            slideIndex = (slideIndex + 1) % slideImages.length;
+        }
+        // Initialize slideshow
+        setSlide();
+        setInterval(setSlide, 5000);
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
